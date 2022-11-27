@@ -5,3 +5,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+.card {
+    background-color: white;
+    width: 45%;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+}
+
+.image {
+    width: 50%;
+    height: 60vh;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.product-content {
+    width: 50%;
+    padding: 30px;
+}
