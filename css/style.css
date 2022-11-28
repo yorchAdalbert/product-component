@@ -1,4 +1,4 @@
-/* General Styles */
+/* GLOBALS*/
 
 * {
     margin: 0;
@@ -21,6 +21,34 @@ button {
     color: hsl(228, 12%, 48%);
 }
 
+/* CARD SECTION */
+
+.card {
+    background-color: white;
+    width: 45%;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+}
+
+/* IMAGE SECTION */
+
+.image {
+    width: 50%;
+    height: 60vh;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* PRODUCT CONTENT */
+
+.product-content {
+    width: 50%;
+    padding: 40px;
+}
+
 .product-title {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
@@ -36,19 +64,11 @@ button {
     margin-bottom: 15px;
 }
 
-.card {
-    background-color: white;
-    width: 45%;
-    height: 60vh;
-    border-radius: 10px;
-    display: flex;
-}
-
 .description {
     line-height: 1.5;
 }
 
-/* Prise Section */
+/* PRICE SECTION */
 
 .price-section {
     display: flex;
@@ -67,6 +87,13 @@ button {
     margin-left: 30px;
 }
 
+hr {
+    position: relative;
+    bottom: 31px;
+    left: 144px;
+    width: 25%;
+}
+
 button {
     width: 100%;
     height: 50px;
@@ -81,20 +108,6 @@ button img {
     margin-right: 10px;
 }
 
-.image {
-    width: 50%;
-    height: 60vh;
-    background-image: url(../images/image-product-desktop.jpg);
-    background-size: cover;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.product-content {
-    width: 50%;
-    padding: 40px;
-}
-
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1445px) {
@@ -104,6 +117,10 @@ button img {
     .description,
     .price-section {
         margin-bottom: 20px;
+    }
+
+    hr {
+        bottom: 50px;
     }
 }
 
@@ -142,6 +159,12 @@ button img {
         height: 40px;
     }
 
+    hr {
+        bottom: 30px;
+        left: 122px;
+        width: 27%;
+    }
+
 }
 
 @media only screen and (max-width: 769px) {
@@ -152,8 +175,14 @@ button img {
     .price-section {
         height: 50px;
     }
+
+    hr {
+        bottom: 35px;
+        left: 120px;
+    }
 }
 
+/* MOVIL RESPONSIVE */
 @media only screen and (max-width: 426px) {
     .card {
         flex-flow: column;
@@ -173,6 +202,10 @@ button img {
     .product-content {
         width: 100%;
     }
+
+    hr {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 376px) {
@@ -186,5 +219,25 @@ button img {
 
     button {
         height: 50px;
+    }
+
+    hr {
+        bottom: 45px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    hr {
+        width: 20%;
+        left: 126px;
+        bottom: 35px;
+    }
+
+    .price-section {
+        margin-bottom: 10px;
+    }
+
+    button {
+        height: 40px;
     }
 }
