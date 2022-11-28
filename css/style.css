@@ -182,7 +182,7 @@ button img {
     }
 }
 
-/* MOVIL RESPONSIVE */
+/* MOBILE RESPONSIVE */
 @media only screen and (max-width: 426px) {
     .card {
         flex-flow: column;
