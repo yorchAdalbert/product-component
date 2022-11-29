@@ -17,8 +17,9 @@ User should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL:[]()
+- Solution URL: [](https://github.com/yorchAdalbert/product-component)
+- Live Site URL:[](https://product-component.yorchadalbert.com/)
+- Live Site URL:[](https://yorchadalbert.github.io/product-component/)
 
 ## My process
 
@@ -31,8 +32,13 @@ User should be able to:
 
 ### What I learned
 
+I learned to use the flex css property.
+
 ### Useful resources
+
+- [](https://www.codecademy.com) - 
+- [](https://www.w3schools.com) -
 
 ## Author
 - Website - [Jorge Rodriguez](http://www.yorchadalbert.com)
-- Frontend Mentor - [@yorchAdalbert](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yorchAdalbert](https://www.frontendmentor.io/profile/yorchAdalbert)
