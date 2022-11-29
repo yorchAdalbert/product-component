@@ -13,7 +13,7 @@ User should be able to:
 ![](/images/product-component-desktop.png)
 
 ## Mobile layout version
-![](/images/image-product-mobile.jpg)
+![](/images/product-component-movil.png)
 
 ### Links
 
