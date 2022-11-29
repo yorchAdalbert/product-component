@@ -76,22 +76,21 @@ button {
     height: 60px;
 }
 
-.off-price {
+.off-price p {
     color: hsl(158, 36%, 37%);
     font-weight: bold;
     font-size: 30px;
     font-family: 'Fraunces', serif;
 }
 
-.origin-price {
+.origin-price p,
+.origin-price hr {
     margin-left: 30px;
 }
 
 hr {
     position: relative;
-    bottom: 31px;
-    left: 144px;
-    width: 25%;
+    bottom: 10px;
 }
 
 button {
@@ -117,10 +116,6 @@ button img {
     .description,
     .price-section {
         margin-bottom: 20px;
-    }
-
-    hr {
-        bottom: 50px;
     }
 }
 
@@ -160,11 +155,8 @@ button img {
     }
 
     hr {
-        bottom: 30px;
-        left: 122px;
-        width: 27%;
+        bottom: 8px;
     }
-
 }
 
 @media only screen and (max-width: 769px) {
@@ -174,11 +166,6 @@ button img {
 
     .price-section {
         height: 50px;
-    }
-
-    hr {
-        bottom: 35px;
-        left: 120px;
     }
 }
 
@@ -202,10 +189,6 @@ button img {
     .product-content {
         width: 100%;
     }
-
-    hr {
-        width: 20%;
-    }
 }
 
 @media only screen and (max-width: 376px) {
@@ -221,17 +204,9 @@ button img {
         height: 50px;
     }
 
-    hr {
-        bottom: 45px;
-    }
 }
 
-@media only screen and (max-width:320px) {
-    hr {
-        width: 20%;
-        left: 126px;
-        bottom: 35px;
-    }
+@media only screen and (max-width:321px) {
 
     .price-section {
         margin-bottom: 10px;
@@ -239,5 +214,16 @@ button img {
 
     button {
         height: 40px;
+    }
+}
+
+@media only screen and (max-width:250px) {
+    .price-section {
+        flex-direction: column;
+    }
+
+    .origin-price p,
+    .origin-price hr {
+        margin: 0 0 0 0;
     }
 }
