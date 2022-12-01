@@ -36,8 +36,8 @@ I learned to use the flex css property.
 
 ### Useful resources
 
-- [](https://www.codecademy.com) - 
-- [](https://www.w3schools.com) -
+- [codecademy](https://www.codecademy.com) - 
+- [w3schools](https://www.w3schools.com) -
 
 ## Author
 - Website - [Jorge Rodriguez](http://www.yorchadalbert.com)
