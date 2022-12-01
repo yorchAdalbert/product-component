@@ -17,9 +17,9 @@ User should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/yorchAdalbert/product-component)
-- Live Site URL:[](https://product-component.yorchadalbert.com/)
-- Live Site URL:[](https://yorchadalbert.github.io/product-component/)
+- Solution URL: [My git repo](https://github.com/yorchAdalbert/product-component)
+- Live Site URL:[yorch's website](https://product-component.yorchadalbert.com/)
+- Live Site URL:[github page](https://yorchadalbert.github.io/product-component/)
 
 ## My process
 
