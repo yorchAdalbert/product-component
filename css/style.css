@@ -6,17 +6,21 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: hsl(30, 38%, 92%);
-    height: 100vh;
+html {
+    font-size: 10px;
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
 }
 
 p,
 button {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
 }
@@ -24,19 +28,20 @@ button {
 /* CARD SECTION */
 
 .card {
-    background-color: white;
-    width: 45%;
-    height: 60vh;
-    border-radius: 10px;
     display: flex;
+    background-color: white;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* IMAGE SECTION */
 
-.image {
+.product-img {
     width: 50%;
-    height: 60vh;
     background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -46,22 +51,22 @@ button {
 
 .product-content {
     width: 50%;
-    padding: 40px;
+    padding: 3rem;
 }
 
 .product-title {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
-    font-size: 2.1rem;
-    padding-right: 20px;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    padding-right: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1;
 }
 
 .sub-title {
     text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 15px;
+    letter-spacing: .5rem;
+    margin-bottom: 1.5rem;
 }
 
 .description {
@@ -73,157 +78,91 @@ button {
 .price-section {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 6rem;
 }
 
 .off-price p {
     color: hsl(158, 36%, 37%);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3rem;
     font-family: 'Fraunces', serif;
 }
 
 .origin-price p,
 .origin-price hr {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 hr {
     position: relative;
-    bottom: 10px;
+    bottom: 1rem;
 }
 
 button {
     width: 100%;
-    height: 50px;
+    height: 5rem;
     background-color: hsl(158, 36%, 37%);
     border: 1px solid hsl(158, 59%, 46%);
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: .5rem;
     color: white;
 }
 
 button img {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1445px) {
+@media only screen and (max-width: 1100px) {
 
-    .sub-title,
-    .product-title,
-    .description,
-    .price-section {
-        margin-bottom: 20px;
+    html {
+        font-size: 9px;
+    }
+
+    .card {
+        width: 65%;
     }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 725px) {
+    html {
+        font-size: 8px;
+    }
+
     .card {
-        width: 55%;
-        height: 65vh;
-    }
-
-    .product-title,
-    .off-price {
-        font-size: 1.5em;
-    }
-
-    p,
-    button {
-        font-size: .8rem;
-    }
-
-    button {
-        height: 40px;
-    }
-
-    .image {
-        height: 65vh;
-    }
-
-    .description,
-    .product-title,
-    .sub-title {
-        margin-bottom: 15px;
-    }
-
-    .price-section {
-        margin-bottom: 10px;
-        height: 40px;
-    }
-
-    hr {
-        bottom: 8px;
+        width: 75%;
     }
 }
 
-@media only screen and (max-width: 769px) {
-    .card {
-        width: 80%;
+@media only screen and (max-width: 560px) {
+    html {
+        font-size: 7px;
     }
 
-    .price-section {
-        height: 50px;
+    .card {
+        width: 90%;
     }
 }
 
 /* MOBILE RESPONSIVE */
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 410px) {
     .card {
         flex-flow: column;
         width: 90%;
-        height: 92vh;
     }
 
-    .image {
+    .product-img {
         background-image: url(../images/image-product-mobile.jpg);
         background-size: cover;
+        background-position: center;
         width: 100%;
-        height: 39vh;
+        height: 32vh;
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
     }
 
     .product-content {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 376px) {
-    .product-content {
-        padding: 20px;
-    }
-
-    .price-section {
-        margin-bottom: 20px;
-    }
-
-    button {
-        height: 50px;
-    }
-
-}
-
-@media only screen and (max-width:321px) {
-
-    .price-section {
-        margin-bottom: 10px;
-    }
-
-    button {
-        height: 40px;
-    }
-}
-
-@media only screen and (max-width:250px) {
-    .price-section {
-        flex-direction: column;
-    }
-
-    .origin-price p,
-    .origin-price hr {
-        margin: 0 0 0 0;
     }
 }
