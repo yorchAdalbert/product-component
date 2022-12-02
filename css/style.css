@@ -108,6 +108,17 @@ button {
     color: white;
 }
 
+button:hover {
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    background-color: hsl(159, 36%, 62%);
+    border: 1px solid hsl(158, 36%, 37%);
+}
+
+button:active {
+    box-shadow: 0 0 1.5rem hsl(158, 47%, 15%) inset;
+}
+
 button img {
     margin-right: 1rem;
 }
