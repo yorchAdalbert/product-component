@@ -141,11 +141,21 @@ body {
 
     background-color: var(--clr-neutral-100);
     border-radius: 0.5rem;
+    display: grid;
     /* 
         When you add border-radius and there's a img on the div
         the border won't be added to the img. the overflow is the solution.
     */
     overflow: hidden;
+    max-width: 600px;
+}
+
+@media (min-width: 600px) {
+    .product {
+        --content-padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
 
 .product__content {
