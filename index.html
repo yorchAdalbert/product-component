@@ -12,30 +12,29 @@
 </head>
 <body>
     <main>
-        <article class="card">
-            <section class="product-img"></section>
-            <section class="product-content">
-                <p class="sub-title">Perfume</p>
-                <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
-                <p class="description">
-                    A floral, solar and voluptuous interpretation composed by Oliveir Polge, Perfumer-Creator for the House of CHANEL.  
+        <article class="product">
+            <picture class="product__img">
+                <img src="./images/image-product-mobile.jpg" alt="">
+            </picture>
+
+            <div class="product__content">
+                <p class="product__category">Perfume</p>
+
+                <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
+
+                <p>
+                    A floral, solar and voluptuous interpretation composed by Oliveir Polge, 
+                    Perfumer-Creator for the House of CHANEL.  
                 </p>
-                <div class="price-section">
-                    <div class="off-price">
-                        <p>$149.99 </p>
-                    </div>
-                    <div class="origin-price">
-                        <p >$169.99</p>
-                        <hr>
-                    </div>
+
+                <div class="flex-group">
+                    <p class="product__price">$149.99</p>
+                    <p class="product__original-price">$169.99</p>
                 </div>
-                <button>
-                    <img src="images/icon-cart.svg" alt="A shopping cart">
-                    Add to Cart
-                </button>
-            </section>
+
+                <button class="button">Add to Cart</button>
+            </div>
         </article>
     </main>
-
 </body>
 </html>
